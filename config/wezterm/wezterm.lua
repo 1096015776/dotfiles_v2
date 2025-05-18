@@ -5,6 +5,8 @@ if w.config_builder then
 end
 
 config.term = "wezterm"
+config.window_background_opacity = 0.9
+config.macos_window_background_blur = 25
 config.front_end = "WebGpu"
 config.window_padding = {
 	left = 5,
