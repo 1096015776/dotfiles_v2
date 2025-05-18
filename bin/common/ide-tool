@@ -1,0 +1,5 @@
+#!/bin/bash
+tmux send-keys -t 2 "yazi"
+tmux send-keys -t 3 "lg" Enter
+tmux select-pane -t 2
+# tmux select-pane -t 4

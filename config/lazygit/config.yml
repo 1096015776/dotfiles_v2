@@ -1,0 +1,26 @@
+confirmonquit: false
+git:
+  autofetch: true
+  merging:
+    manualcommit: false
+  skiphookprefix: WIP
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never --24-bit-color=never --syntax-theme="OneHalfDark"
+# keybinding:
+#   commits:
+#     moveDownCommit: '<c-d>'
+#     moveUpCommit: '<c-u>'
+gui:
+  border: "rounded"
+  showBottomLine: false
+  commitlength:
+    show: true
+  mouseevents: false
+  scrollheight: 2
+  scrollpastbottom: true
+reporting: "off"
+splashupdatesindex: 0
+quitOnTopLevelReturn: true
+startuppopupversion: 1
+promptToReturnFromSubprocess: false

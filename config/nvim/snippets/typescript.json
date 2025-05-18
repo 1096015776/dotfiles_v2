@@ -1,0 +1,67 @@
+{
+  "Function Component": {
+    "prefix": "cf",
+    "scope": "typescript",
+    "body": [
+      "const ${1:name} = (${2:params}) => {",
+      "  ${3:// code}",
+      "}$0;"
+    ],
+    "description": "TS箭头函数组件"
+  },
+  "Vue TS Component": {
+    "prefix": "vc",
+    "scope": "typescript",
+    "body": [
+      "<template>",
+      "  <div />",
+      "</template>",
+      "",
+      "<script lang=\"ts\" setup>",
+      "$1",
+      "</script>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "</style>"
+    ],
+    "description": "Vue3组件模板（TS + SCSS模块）"
+  },
+  "Define Props": {
+    "prefix": "dp",
+    "scope": "typescript",
+    "body": [
+      "const props = defineProps<{",
+      "  ${1:propName}: PropType<${3:type}>",
+      "}>()$0"
+    ],
+    "description": "定义组件Props"
+  },
+  "Define Emits": {
+    "prefix": "de",
+    "scope": "typescript",
+    "body": [
+      "const emit = defineEmits<{",
+      "  (e: '${1:eventName}', payload: ${2:type}): void",
+      "}>()$0"
+    ],
+    "description": "定义组件事件"
+  },
+  "Computed Fuction": {
+    "prefix": "dc",
+    "scope": "typescript",
+    "body": [
+      "const $1 = computed(() => {",
+      "  $2",
+      "})$0"
+    ],
+    "description": "计算函数"
+  },
+  "Vue Ref": {
+    "prefix": "dr",
+    "scope":"typescript",
+    "body": [
+      "const $1 = ref($2)$0"
+    ],
+    "description": "Vue Ref"
+  }
+}
