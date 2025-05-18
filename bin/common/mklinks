@@ -13,8 +13,6 @@
 script_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
 
 dir=$(dirname -- "$script_dir")  # dotfiles directory
-echo 'fx'
-echo $dir
 olddir=~/.dotfiles_old           # old dotfiles backup directory
 
 ##########
