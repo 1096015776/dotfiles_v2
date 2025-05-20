@@ -76,5 +76,7 @@ I have a mklinks zsh to move dotfile<br>
 
 ```shell
 grep -rh '<el-'|awk -F el- '{print $2}'|awk -F ' ' '{print$1}'|sort|uniq
+defaults write com.apple.finder CreateDesktop -bool FALSE; killall Finder
+defaults write com.apple.finder CreateDesktop -bool true; killall Finder
 ```
 
