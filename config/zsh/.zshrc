@@ -1,3 +1,4 @@
+source $ZDOTDIR/z4h/init.zsh
 [[ -f $ZDOTDIR/local.zsh ]] && source $ZDOTDIR/local.zsh
 
 os=$(uname -s)
@@ -24,4 +25,4 @@ path=(
 )
 
 source $ZDOTDIR/custom/init.zsh
-z4h init
+# z4h init
