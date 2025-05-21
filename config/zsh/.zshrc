@@ -1,3 +1,4 @@
+ eval "$(zoxide init zsh)"
 source $ZDOTDIR/z4h/init.zsh
 [[ -f $ZDOTDIR/local.zsh ]] && source $ZDOTDIR/local.zsh
 
