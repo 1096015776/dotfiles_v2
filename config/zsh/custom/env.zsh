@@ -63,9 +63,10 @@ export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden --ignore-file ~/
 export FZF_DEFAULT_OPTS="
 --bind='ctrl-o:execute(nvim {})+abort' 
 --inline-info
---color=bg+:#16161D,spinner:#957FB8,hl:#7E9CD8
---color=fg:#DCD7BA,header:#C8C093,info:#E6C384,pointer:#957FB8
---color=marker:#E6C384,fg+:#DCD7BA,prompt:#957FB8,hl+:#957FB8
+--color=fg:#e5e9f0,bg:#3b4252,hl:#81a1c1
+--color=fg+:#e5e9f0,bg+:#3b4252,hl+:#81a1c1
+--color=info:#eacb8a,prompt:#bf6069,pointer:#b48dac
+--color=marker:#a3be8b,spinner:#b48dac,header:#a3be8b
 "
 
 # Java
