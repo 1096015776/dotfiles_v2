@@ -4,6 +4,7 @@ return {
     -- disable diagnostics
     opts = {
       options = {
+        mode = "tabs",
         diagnostics = false,
         style_preset = "minimal",
         buffer_close_icon = "󰅖",
@@ -17,6 +18,13 @@ return {
           delay = 200,
           reveal = { "close" },
         },
+      },
+      highlights = {
+        separator = { fg = "#4C566A", bg = "NONE" }, -- nord3 分隔线
+        separator_selected = { fg = "#81A1C1", bg = "NONE" }, -- nord9 分隔线
+        indicator_selected = { fg = "#81A1C1", bg = "NONE" }, -- nord9 当前标签指示器
+        close_button = { fg = "#BF616A", bg = "NONE" }, -- nord11 关闭按钮
+        modified = { fg = "#EBCB8B", bg = "NONE" }, -- nord13 修改标记
       },
     },
   },
