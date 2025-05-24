@@ -81,7 +81,7 @@ keymap = [
 	{ on = ".",         run = "hidden toggle",               desc = "Toggle the visibility of hidden files" },
 	{ on = "s",         run = "search --via=fd",             desc = "Search files by name via fd" },
 	{ on = "S",         run = "search --via=rg",             desc = "Search files by content via ripgrep" },
-	{ on = "<C-t>",     run = 'shell "$SHELL" --block --confirm',             desc = "open a new terminal" },
+	{ on = "<C-t>",     run = 'shell "$SHELL" --block',             desc = "open a new terminal" },
 	{ on = "S",         run = "search --via=rg",             desc = "Search files by content via ripgrep" },
 	{ on = "<C-s>",     run = "escape --search",             desc = "Cancel the ongoing search" },
 	# { on = "<C-v>",     run = "shell fp --interactive", desc = "Run a shell command (block until finishes)" },
@@ -391,3 +391,14 @@ run = ["plugin system-clipboard"]
 [[manager.prepend_keymap]]
 on = "<C-v>"
 run = ["shell 'cb paste' --block"]
+
+# [[manager.prepend_keymap]]
+# on = ["\\","d"]
+# run = ["shell 'delta \"$1\" \"$0\">temp.diff' --block"]
+# desc = "Diff the selected with the hovered file"
+
+
+[[manager.prepend_keymap]]
+on = ["\\","d"]
+run = ["shell 'nvim -d \"$1\" \"$0\"' --block"]
+desc = "Diff the selected with the hovered file"
