@@ -4,3 +4,10 @@
 [credential]
   helper = store
 
+[core]
+    pager = delta
+[delta]
+    dark = true
+    true-color = never
+    syntax-theme = OneHalfDark
+    paging = never
