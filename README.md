@@ -50,6 +50,7 @@ brew install anhoder/go-musicfox/go-musicfox
 brew install azhuchkov/tools/tunblkctl
 brew install ical-buddy
 brew install --cask font-sketchybar-app-font
+brew install clipboard
 ```
 
 ## windows register
