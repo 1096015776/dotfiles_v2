@@ -55,6 +55,8 @@ export GRADLE_USER_HOME="$XDG_DATA_HOME/gradle"
 export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
 
 export LESSHISTFILE="-"
+export LESS=-iRXMx4
+# unset LESS
 
 # Use a better command for searching with fzf
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden --ignore-file ~/.config/ripgrep/ignore'
