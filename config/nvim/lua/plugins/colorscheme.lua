@@ -4,7 +4,7 @@ return {
     -- disable diagnostics
     opts = {
       options = {
-        mode = "tabs",
+        -- mode = "tabs",
         diagnostics = false,
         style_preset = "minimal",
         buffer_close_icon = "󰅖",
