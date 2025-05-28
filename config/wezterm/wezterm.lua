@@ -4,10 +4,8 @@ if w.config_builder then
 	config = w.config_builder()
 end
 
-config.term = "wezterm"
 config.window_background_opacity = 0.9
 config.macos_window_background_blur = 25
-config.front_end = "WebGpu"
 config.window_padding = {
 	left = 5,
 	right = 5,
@@ -24,7 +22,7 @@ config.mouse_bindings = {
 }
 
 config.color_scheme = "nord"
-config.font = w.font("Victor Mono", { weight = "Medium" })
+config.font = w.font("VictorMono Nerd Font Mono")
 config.font_size = 14
 config.line_height = 1.2
 config.strikethrough_position = "0.5cell"
