@@ -1,6 +1,7 @@
 local map = vim.keymap.set
 -- set <space> as the leader key
 map({ "n", "v" }, "<space>", "<nop>")
+map({ "n", "v" }, "<leader><leader>", "<c-^>")
 
 -- Store relative line number jumps in the jumplist if they exceed a threshold.
 map("n", "k", '(v:count > 5 ? "m\'" . v:count : "") . "k"', { expr = true })
