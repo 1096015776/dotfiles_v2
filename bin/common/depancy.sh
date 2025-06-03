@@ -17,6 +17,7 @@ imagemagick
 poppler
 ffmpeg
 fastfetch
+figlet
 )
 
 mac_pack=(sevenzip)
