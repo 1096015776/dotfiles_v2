@@ -98,10 +98,6 @@ map("n", "<localleader>w", "<cmd>silent w!<cr>", { silent = true, desc = "save" 
 map("n", "<localleader>sr", ":%s/\\<<c-r><c-w>\\>/")
 map("n", "<localleader>,", ":s/,/,\\r/g<cr>", { silent = true, desc = "add new line after comma" })
 map("n", "<localleader> ", ":s/\\(\\S\\s\\)/\\1\\r/g<cr>", { silent = true, desc = "add new line after word" })
-map("n", "<localleader>z", function()
-  vim.opt.foldmethod = "expr"
-  vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-end, { silent = true, desc = "enable treesitter fold" })
 map("v", "<localleader> ", ":s/\\(\\S\\s\\)/\\1\\r/g<cr>", { silent = true })
 map("v", "<localleader>,", ":s/,/,\\r/g<cr>", { silent = true })
 

@@ -2,7 +2,6 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 local map = vim.keymap.set
-local Util = require("lazyvim.util")
 
 -- use system copy
 map("v", "<c-c>", '"+y :call system("clip.exe", @+)<cr>', { noremap = true, silent = true })
