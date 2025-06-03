@@ -10,8 +10,8 @@ return {
         buffer_close_icon = "󰅖",
         modified_icon = "● ",
         close_icon = "󰅖",
-        separator_style = "thin",
-        always_show_bufferline = true,
+        separator_style = "thick",
+        always_show_bufferline = false,
         sort_by = "directory",
         hover = {
           enabled = true,
@@ -20,25 +20,195 @@ return {
         },
       },
       highlights = {
-        separator = { fg = "#282d38", bg = "NONE" },
-        separator_selected = { fg = "#282d38", bg = "#424b5e" },
-        indicator_selected = { fg = "#81A1C1", bg = "#424b5e" },
-        close_button = { fg = "#BF616A", bg = "NONE" },
-        modified = { fg = "#EBCB8B", bg = "#363d4d" },
-        modified_selected = {
-          fg = "#99C37A",
-          bg = "#424b5e",
+        fill = {
+          bg = "#282C34",
         },
         background = {
-          bg = "#363d4d",
+          bg = "#282C34",
         },
+
         buffer_selected = {
-          bg = "#424b5e",
+          bg = "#3b4252",
+          italic = true,
+        },
+        buffer_visible = {
+          bg = "NONE",
+          italic = true,
+        },
+
+        numbers = {
+          bg = "#282C34",
+        },
+        numbers_selected = {
+          bg = "#3b4252",
+        },
+        numbers_visible = {
+          bg = "#2A2F3A",
+          italic = true,
+        },
+
+        diagnostic = {
+          bg = "#282C34",
+        },
+        diagnostic_selected = {
+          bg = "#3b4252",
           bold = true,
           italic = true,
         },
+        diagnostic_visible = {
+          bg = "#2A2F3A",
+        },
+
+        hint = {
+          bg = "#282C34",
+        },
+        hint_visible = {
+          bg = "#2A2F3A",
+        },
+        hint_selected = {
+          bg = "#3b4252",
+          bold = true,
+          italic = true,
+        },
+        hint_diagnostic = {
+          bg = "#282C34",
+        },
+        hint_diagnostic_visible = {
+          bg = "#2A2F3A",
+        },
+        hint_diagnostic_selected = {
+          bg = "#3b4252",
+          bold = true,
+          italic = true,
+        },
+
+        info = {
+          bg = "#282C34",
+        },
+        info_visible = {
+          bg = "#2A2F3A",
+        },
+        info_selected = {
+          bg = "#3b4252",
+          bold = true,
+          italic = true,
+        },
+        info_diagnostic = {
+          bg = "#282C34",
+        },
+        info_diagnostic_visible = {
+          bg = "#2A2F3A",
+        },
+        info_diagnostic_selected = {
+          bg = "#3b4252",
+          bold = true,
+          italic = true,
+        },
+
+        warning = {
+          bg = "#282C34",
+        },
+        warning_visible = {
+          bg = "#2A2F3A",
+        },
+        warning_selected = {
+          bg = "#3b4252",
+          bold = true,
+          italic = true,
+        },
+        warning_diagnostic = {
+          bg = "#282C34",
+        },
+        warning_diagnostic_visible = {
+          bg = "#2A2F3A",
+        },
+        warning_diagnostic_selected = {
+          bg = "#3b4252",
+          bold = true,
+          italic = true,
+        },
+        error = {
+          bg = "#282C34",
+        },
+        error_visible = {
+          bg = "#2A2F3A",
+        },
+        error_selected = {
+          bg = "#3b4252",
+          bold = true,
+          italic = true,
+        },
+        error_diagnostic = {
+          bg = "#282C34",
+        },
+        error_diagnostic_visible = {
+          bg = "#2A2F3A",
+        },
+        error_diagnostic_selected = {
+          bg = "#3b4252",
+          bold = true,
+          italic = true,
+        },
+
+        close_button = {
+          bg = "#282C34",
+        },
+        close_button_visible = {
+          bg = "#2A2F3A",
+        },
         close_button_selected = {
-          bg = "#424b5e",
+          bg = "#3b4252",
+        },
+
+        duplicate = {
+          bg = "#282C34",
+        },
+        duplicate_selected = {
+          bg = "#3b4252",
+        },
+        duplicate_visible = {
+          bg = "#2A2F3A",
+        },
+
+        separator = {
+          fg = "#2e3440",
+          bg = "NONE",
+        },
+        separator_selected = {
+          fg = "#282C34",
+          bg = "#3b4252",
+        },
+        separator_visible = {
+          fg = "#282C34",
+          bg = "#2A2F3A",
+        },
+        modified = {
+          bg = "#282C34",
+        },
+        modified_selected = {
+          bg = "#3b4252",
+        },
+        modified_visible = {
+          bg = "#2A2F3A",
+        },
+        indicator_selected = {
+          fg = "#81a1c1",
+          bg = "#3b4252",
+        },
+        pick = {
+          bg = "#282C34",
+          bold = true,
+          italic = true,
+        },
+        pick_selected = {
+          bg = "#3b4252",
+          bold = true,
+          italic = true,
+        },
+        pick_visible = {
+          bg = "#2A2F3A",
+          bold = true,
+          italic = true,
         },
       },
     },
