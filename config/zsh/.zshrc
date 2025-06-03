@@ -14,6 +14,7 @@ fi
 export PNPM_HOME="$XDG_DATA_HOME/pnpm"
 typeset -U path
 path=(
+  $HOME/.bun/bin
   /usr/local/{bin,sbin}
   $HOME/dotfiles/bin/common
   $ANDROID_SDK_ROOT/emulator
