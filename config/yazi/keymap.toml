@@ -2,7 +2,7 @@
 # If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
 "$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
 
-[manager]
+[mgr]
 
 keymap = [
 	{ on = "<Esc>", run = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },
@@ -359,36 +359,36 @@ keymap = [
 ]
   
 # plugin keymap
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on   = [ "c", "a" ]
 run  = "plugin compress"
 desc = "Archive selected files"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = [ "m" ]
 run = "plugin bookmarks 'save'"
 desc = "Save current position as a bookmark"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = [ "'" ]
 run = "plugin bookmarks 'jump'"
 desc = "Jump to a bookmark"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = [ "b", "d" ]
 run = "plugin bookmarks 'delete'"
 desc = "Delete a bookmark"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = [ "b", "D" ]
 run = "plugin bookmarks 'delete_all'"
 desc = "Delete all bookmarks"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = "<C-y>"
 run = ["plugin system-clipboard"]
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = "<C-v>"
 run = ["shell 'cb paste' --block"]
 
@@ -398,12 +398,12 @@ run = ["shell 'cb paste' --block"]
 # desc = "Diff the selected with the hovered file"
 
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = ["\\","d"]
 run = ["shell 'delta \"$1\" \"$0\" | less' --block"]
 desc = "Diff the selected with the hovered file"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = ["\\","D"]
 run = ["shell 'nvim -d \"$1\" \"$0\"' --block"]
 desc = "Diff the selected with the hovered file"
