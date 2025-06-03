@@ -10,7 +10,7 @@ return {
         buffer_close_icon = "󰅖",
         modified_icon = "● ",
         close_icon = "󰅖",
-        separator_style = "thick",
+        separator_style = "thin",
         always_show_bufferline = true,
         sort_by = "directory",
         hover = {
@@ -20,11 +20,26 @@ return {
         },
       },
       highlights = {
-        separator = { fg = "#4C566A", bg = "NONE" }, -- nord3 分隔线
-        separator_selected = { fg = "#81A1C1", bg = "NONE" }, -- nord9 分隔线
-        indicator_selected = { fg = "#81A1C1", bg = "NONE" }, -- nord9 当前标签指示器
-        close_button = { fg = "#BF616A", bg = "NONE" }, -- nord11 关闭按钮
-        modified = { fg = "#EBCB8B", bg = "NONE" }, -- nord13 修改标记
+        separator = { fg = "#282d38", bg = "NONE" },
+        separator_selected = { fg = "#282d38", bg = "#424b5e" },
+        indicator_selected = { fg = "#81A1C1", bg = "#424b5e" },
+        close_button = { fg = "#BF616A", bg = "NONE" },
+        modified = { fg = "#EBCB8B", bg = "#363d4d" },
+        modified_selected = {
+          fg = "#99C37A",
+          bg = "#424b5e",
+        },
+        background = {
+          bg = "#363d4d",
+        },
+        buffer_selected = {
+          bg = "#424b5e",
+          bold = true,
+          italic = true,
+        },
+        close_button_selected = {
+          bg = "#424b5e",
+        },
       },
     },
   },
