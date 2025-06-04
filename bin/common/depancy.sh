@@ -69,7 +69,7 @@ if [[ "$os" == "Darwin" ]]; then
   brew install --cask "${mac_cask_pack[@]}"
   defaults write com.apple.finder CreateDesktop -bool FALSE; killall Finder
 elif [[ "$os" == "Linux" ]]; then
-  pacman -S "${common_pack[@]}" "${linux_pack[@]}"
+  sudo pacman -S "${common_pack[@]}" "${linux_pack[@]}"
 else
   echo "Unsupported OS: $os"
   exit 1
