@@ -18,6 +18,7 @@ common_pack=(
   ffmpeg
   fastfetch
   figlet
+  npm
 )
 
 mac_pack=(
