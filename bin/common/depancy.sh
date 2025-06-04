@@ -44,9 +44,9 @@ mac_cask_pack=(
   free-ruler
   flameshot
   notion
-  neteasemusic
-  wechat
-  qq
+  # neteasemusic
+  # wechat
+  # qq
   google-chrome
   anki
   json-viewer
