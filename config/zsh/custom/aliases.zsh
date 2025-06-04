@@ -10,6 +10,8 @@ alias v='nvim'
 alias r='yazi'
 alias yd='dict'
 alias tm="tmux attach -t code || tmux new -s code"
+alias tm_w="tmux attach -t work || tmux new -s work"
+alias tm_d="tmux attach -t demo || tmux new -s demo"
 if type /Applications/love.app/Contents/MacOS/love > /dev/null; then
   alias love='/Applications/love.app/Contents/MacOS/love'
 fi
