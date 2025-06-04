@@ -14,7 +14,6 @@
     "scope": "vue",
     "body": [
       "<template>",
-      "  <div />",
       "</template>",
       "",
       "<script lang=\"ts\" setup>",
