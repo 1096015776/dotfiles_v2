@@ -136,7 +136,7 @@ return {
         },
       },
       diagnostics = {
-        virtual_text = false,
+        -- virtual_text = false,
       },
       setup = {},
     },
@@ -247,7 +247,7 @@ return {
   },
   {
     "rachartier/tiny-inline-diagnostic.nvim",
-    enabled = true,
+    enabled = false,
     event = "LspAttach", -- Or `LspAttach`
     priority = 1000, -- needs to be loaded in first
     config = function()
@@ -263,5 +263,15 @@ return {
         },
       })
     end,
+  },
+  {
+    "rachartier/tiny-code-action.nvim",
+    event = "LspAttach",
+    opts = {
+      backend = "delta",
+      picker = {
+        "snacks"
+      },
+    },
   },
 }
