@@ -222,10 +222,9 @@ return {
     },
   },
   {
-
     "iamcco/markdown-preview.nvim",
     -- enabled = false,
-    -- ft = "markdown",
+    ft = "markdown",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
     build = function()
       require("lazy").load({ plugins = { "markdown-preview.nvim" } })
