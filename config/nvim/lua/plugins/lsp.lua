@@ -135,6 +135,9 @@ return {
           },
         },
       },
+      diagnostics = {
+        virtual_text = false,
+      },
       setup = {},
     },
   },
@@ -240,6 +243,25 @@ return {
     },
     config = function()
       vim.cmd([[do FileType]])
+    end,
+  },
+  {
+    "rachartier/tiny-inline-diagnostic.nvim",
+    enabled = true,
+    event = "LspAttach", -- Or `LspAttach`
+    priority = 1000, -- needs to be loaded in first
+    config = function()
+      require("tiny-inline-diagnostic").setup({
+        options = {
+          multilines = {
+            -- Enable multiline diagnostic messages
+            enabled = true,
+
+            -- Always show messages on all lines for multiline diagnostics
+            always_show = true,
+          },
+        },
+      })
     end,
   },
 }
