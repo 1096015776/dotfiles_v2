@@ -32,7 +32,7 @@ return {
           italic = true,
         },
         buffer_visible = {
-          bg = "NONE",
+          bg = "#3b4252",
           italic = true,
         },
 
@@ -179,8 +179,8 @@ return {
           bg = "#3b4252",
         },
         separator_visible = {
-          fg = "#282C34",
-          bg = "#2A2F3A",
+          fg = "#3b4252",
+          bg = "#3b4252",
         },
         modified = {
           bg = "#282C34",
