@@ -118,4 +118,8 @@ return {
       },
     },
   },
+  {
+    "github/copilot.vim",
+    enabled = false, -- use codeium instead
+  }
 }
