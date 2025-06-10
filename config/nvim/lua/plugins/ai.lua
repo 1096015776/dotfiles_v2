@@ -74,6 +74,28 @@ return {
           },
         },
       },
+      windows = {
+        ---@type "right" | "left" | "top" | "bottom"
+        position = "right", -- the position of the sidebar
+        wrap = true, -- similar to vim.o.wrap
+        width = 30, -- default % based on available width
+        sidebar_header = {
+          enabled = false, -- true, false to enable/disable the header
+          rounded = true,
+        },
+        input = {
+          prefix = "> ",
+          height = 8, -- Height of the input window in vertical layout
+        },
+        edit = {
+          border = "none",
+          start_insert = true, -- Start insert mode when opening the edit window
+        },
+        ask = {
+          start_insert = true, -- Start insert mode when opening the ask window
+          border = "none",
+        },
+      },
     },
     -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
     build = "make",
@@ -121,5 +143,5 @@ return {
   {
     "github/copilot.vim",
     enabled = false, -- use codeium instead
-  }
+  },
 }
