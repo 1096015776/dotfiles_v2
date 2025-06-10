@@ -121,7 +121,11 @@ map("i", "<c-l>", "<esc>/<++><cr>c4l")
 map("i", "<c-h>", "<esc>?<++><cr>c4l")
 
 map("n", "<localleader>ca", function()
-  require("tiny-code-action").code_action()
+  require("tiny-code-action").code_action({
+    filters = {
+      line = vim.api.nvim_win_get_cursor(0)[1] - 1,
+    },
+  })
 end, { noremap = true, silent = true })
 vim.keymap.set("n", "<localleader>ri", function()
   local cursor_position = vim.fn.getcurpos()
