@@ -7,3 +7,13 @@ function proxy_off(){
   unset http_proxy https_proxy ALL_PROXY
 }
 
+fzf-kill-process() {
+  local pid
+  pid=$(ps -ef | sed 1d | fzf -m | awk '{print $2}')
+
+  if [ "x$pid" != "x" ]; then
+    echo $pid | xargs kill -${1:-9}
+  fi
+}
+zle -N fzf-kill-process  # 注册为 Zsh 功能部件
+bindkey '^Z' fzf-kill-process  # 绑定 Ctrl+Z 到该功能
