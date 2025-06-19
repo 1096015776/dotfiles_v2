@@ -50,11 +50,11 @@ function openlazygit {
     zle_eval lazygit
 }
 
-zle -N openlazygit; bindkey "^G" openlazygit
+# zle -N openlazygit; bindkey "^G" openlazygit
 
 function opennvim {
     zle_eval nvim
 }
 
-zle -N opennvim; bindkey "^N" opennvim
+# zle -N opennvim; bindkey "^N" opennvim
 
