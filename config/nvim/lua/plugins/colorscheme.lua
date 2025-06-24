@@ -32,7 +32,7 @@ return {
           italic = true,
         },
         buffer_visible = {
-          bg = "#3b4252",
+          bg = "#282C34",
           italic = true,
         },
 
