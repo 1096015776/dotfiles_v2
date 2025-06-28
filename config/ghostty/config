@@ -1,0 +1,35 @@
+# Ghostty 主配置 - 保持与Kitty一致的外观体验
+include themes/Catppuccin-Frappe.conf
+
+font_family      JetBrainsMono Nerd Font
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+font_size        12.0
+
+adjust_line_height 0
+adjust_column_width 0
+
+cursor_shape     beam
+cursor_blink_interval 0.5
+scrollback_lines 10000
+
+url_style double
+open_url_with default
+
+mouse_hide_wait 0
+copy_on_select yes
+
+enable_audio_bell no
+visual_bell_duration 0.0
+
+remember_window_size yes
+initial_window_width  800
+initial_window_height 600
+
+# 保持与Kitty一致的快捷键
+map cmd+t new_tab
+map cmd+w close_tab
+map cmd+1 goto_tab 1
+map cmd+2 goto_tab 2
+map cmd+3 goto_tab 3
