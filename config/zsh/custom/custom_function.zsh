@@ -56,5 +56,14 @@ function opennvim {
     zle_eval nvim
 }
 
+function p_v {
+  source ~/.venvs/copilot-chat/bin/activate
+}
+
+function dv {
+  deactivate
+}
+p_v
+
 # zle -N opennvim; bindkey "^N" opennvim
 
