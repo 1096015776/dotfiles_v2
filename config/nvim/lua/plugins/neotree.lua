@@ -4,6 +4,7 @@ return {
     window = {
       -- width = 25,
       mappings = {
+        -- use c-f to search files with grug-far
         ["<c-f>"] = function(state)
           local node = state.tree:get_node()
           local path = node:get_parent_id()
@@ -15,6 +16,7 @@ return {
             prefills = { paths = path },
           })
         end,
+        -- use c-e to open files with yazi
         ["<c-e>"] = function(state)
           local node = state.tree:get_node()
           local path = node:get_parent_id()
@@ -25,6 +27,7 @@ return {
           local term_opts = { cwd = path, esc_esc = false, ctrl_hjkl = false, border = "single" }
           require("snacks").terminal({ "zsh", "-c", "cd " .. path .. " && yazi" }, term_opts)
         end,
+        -- use \d to open file history with diffview plugin
         ["<localleader>d"] = function(state)
           local node = state.tree:get_node()
           local path = node:get_parent_id()
