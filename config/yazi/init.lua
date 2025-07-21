@@ -1,11 +1,12 @@
+-- plugin bookmarks
 require("bookmarks"):setup({
-	last_directory = { enable = false, persist = false, mode = "dir" },
+	last_directory = { enable = true, persist = false, key = "`" },
 	persist = "vim",
-	desc_format = "full",
+	desc_format = "parent",
 	file_pick_mode = "hover",
-	custom_desc_input = false,
+	custom_desc_input = true,
 	notify = {
-		enable = false,
+		enable = true,
 		timeout = 1,
 		message = {
 			new = "New bookmark '<key>' -> '<folder>'",
