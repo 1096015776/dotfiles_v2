@@ -23,7 +23,7 @@ return {
 
 		-- ya.notify({ title = #urls, content = table.concat(urls, " "), level = "info", timeout = 5 })
 
-		local status, err = Command("cb"):arg("copy"):args(urls):spawn():wait()
+		local status, err = Command("cb"):arg("copy"):arg(urls):spawn():wait()
 
 		if status or status.succes then
 			ya.notify({
