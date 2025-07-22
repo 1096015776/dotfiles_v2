@@ -178,6 +178,10 @@ return {
           fg = "#282C34",
           bg = "#3b4252",
         },
+        indicator_visible = {
+          -- fg = "#81a1c1",
+          bg = "#282C34",
+        },
         separator_visible = {
           fg = "#3b4252",
           bg = "#3b4252",
