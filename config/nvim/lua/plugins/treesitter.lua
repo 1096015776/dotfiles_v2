@@ -37,6 +37,9 @@ return {
         "toml",
         "ron",
         "dockerfile",
+        -- request
+        "http",
+        "graphql",
       })
       opts.highlight = {
         enable = true,
