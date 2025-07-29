@@ -5,7 +5,7 @@ return {
       -- width = 25,
       mappings = {
         -- use c-f to search files with grug-far
-        ["<c-f>"] = function(state)
+        ["<localleader>f"] = function(state)
           local node = state.tree:get_node()
           local path = node:get_parent_id()
           if node.type == "directory" then
@@ -17,7 +17,7 @@ return {
           })
         end,
         -- use c-e to open files with yazi
-        ["<c-e>"] = function(state)
+        ["<localleader>e"] = function(state)
           local node = state.tree:get_node()
           local path = node:get_parent_id()
           if node.type == "directory" then
