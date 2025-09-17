@@ -218,6 +218,108 @@ return {
     },
   },
   {
+    "catppuccin/nvim",
+    lazy = false,
+    priority = 1000,
+    name = "catppuccin",
+    opts = {
+      flavour = "frappe",
+      transparent_background = true,
+      term_colors = true,
+      styles = {
+        comments = { "italic" },
+        conditionals = { "bold", "italic" },
+        constants = { "bold" },
+        keywords = { "bold" },
+        loops = { "italic", "bold" },
+      },
+      color_overrides = {},
+      custom_highlights = function(C)
+        return {
+          RainbowDelimiterRed = { fg = "#FF5D62" },
+          RainbowDelimiterYellow = { fg = "#E6C384" },
+          RainbowDelimiterBlue = { fg = "#7FB4CA" },
+          RainbowDelimiterOrange = { fg = "#FFA066" },
+          RainbowDelimiterGreen = { fg = "#98BB6C" },
+          RainbowDelimiterViolet = { fg = "#D27E99" },
+          RainbowDelimiterCyan = { fg = "#7AA89F" },
+          -- RainbowDelimiterRed = { fg = "#FF1A75" },
+          -- RainbowDelimiterYellow = { fg = "#f1ff5e" },
+          -- RainbowDelimiterBlue = { fg = "#28C9FF" },
+          -- RainbowDelimiterOrange = { fg = "#FFAA54" },
+          -- RainbowDelimiterGreen = { fg = "#5eff6c" },
+          -- RainbowDelimiterViolet = { fg = "#bd5eff" },
+          -- RainbowDelimiterCyan = { fg = "#33FFFF" },
+          FloatBorder = { fg = C.yellow },
+          ["@tag.tsx"] = { bold = true },
+          ["@keyword.import.tsx"] = { italic = true, fg = C.red },
+          ["@keyword.import.typescript"] = { italic = true, fg = C.red },
+          ["@keyword.export.tsx"] = { italic = true, fg = C.red },
+          ["@keyword.export.typescript"] = { italic = true, fg = C.red },
+        }
+      end,
+      integrations = {
+        telescope = {
+          enabled = true,
+        },
+        dropbar = {
+          enabled = true,
+          color_mode = true,
+        },
+        flash = true,
+        barbar = true,
+        gitsigns = true,
+        leap = true,
+        neotree = true,
+        neotest = true,
+        mason = true,
+        noice = true,
+        notify = true,
+        which_key = true,
+        semantic_tokens = true,
+        mini = {
+          enabled = true,
+        },
+        overseer = true,
+        cmp = true,
+        dap = true,
+        dap_ui = true,
+        treesitter_context = true,
+        treesitter = true,
+        window_picker = true,
+        rainbow_delimiters = true,
+        symbols_outline = true,
+        lsp_trouble = true,
+        illuminate = {
+          enabled = true,
+          lsp = true,
+        },
+        indent_blankline = {
+          enabled = true,
+          colored_indent_levels = true,
+        },
+        native_lsp = {
+          enabled = true,
+          virtual_text = {
+            errors = { "italic" },
+            hints = { "italic" },
+            warnings = { "italic" },
+            information = { "italic" },
+          },
+          underlines = {
+            errors = { "underline" },
+            hints = { "underline" },
+            warnings = { "underline" },
+            information = { "underline" },
+          },
+          inlay_hints = {
+            background = false,
+          },
+        },
+      },
+    },
+  },
+  {
     "olimorris/onedarkpro.nvim",
     priority = 1000, -- Ensure it loads first
     config = function()
@@ -251,6 +353,7 @@ return {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "onedark",
+      -- colorscheme = "catppuccin",
     },
   },
 }

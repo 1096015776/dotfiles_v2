@@ -47,7 +47,7 @@ return {
   },
 
   {
-    "echasnovski/mini.ai",
+    "nvim-mini/mini.ai",
     enabled = false,
     dependencies = { "nvim-treesitter/nvim-treesitter-textobjects" },
     config = function()
