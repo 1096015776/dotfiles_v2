@@ -63,7 +63,7 @@ function p_v {
 function dv {
   deactivate
 }
-p_v
+# p_v
 
 # zle -N opennvim; bindkey "^N" opennvim
 

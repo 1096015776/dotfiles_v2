@@ -3,3 +3,4 @@ config/tmux/plugins
 config/zsh/local.zsh
 */.DS_Store
 .aider*
+/config/zsh/.p10k.zsh.zwc

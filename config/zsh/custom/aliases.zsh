@@ -52,7 +52,7 @@ alias gst='git status'
 alias gs='git stash'
 alias gsp='git stash pop'
 alias lg='lazygit'
-alias cd='z'
+# alias cd='z'
 
 
 # Utils & alternatives
