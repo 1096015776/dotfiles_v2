@@ -1,4 +1,3 @@
--- plugin bookmarks
 require("bookmarks"):setup({
 	last_directory = { enable = true, persist = false, key = "`" },
 	persist = "vim",
@@ -15,3 +14,4 @@ require("bookmarks"):setup({
 		},
 	},
 })
+
