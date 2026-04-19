@@ -8,6 +8,19 @@
         match app-id="kitty"
         draw-border-with-background false
     }
+    window-rule {
+      match app-id="code"  // VSCode 的 app-id 是 code
+      opacity 0.88
+      draw-border-with-background false
+      background-effect {
+        blur true
+      //   x-ray false       // false：模糊下层所有窗口；true：只模糊壁纸
+        // opacity 0.95      // 窗口整体不透明度（0.9～1 比较舒服）
+      }
+      // 可选：圆角
+      // geometry-corner-radius 12
+      clip-to-geometry true
+    }
 
     /* Noctalia: blur everywhere without xray for a better look */
     layer-rule {

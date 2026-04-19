@@ -108,7 +108,7 @@
                     "colorizeIcons": false,
                     "emptyColor": "none",
                     "enableScrollWheel": true,
-                    "focusedColor": "error",
+                    "focusedColor": "secondary",
                     "followFocusedScreen": false,
                     "fontWeight": "medium",
                     "groupedBorderOpacity": 1,
@@ -215,7 +215,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Breeze",
+        "predefinedScheme": "Catppuccin Lavender",
         "schedulingMode": "off",
         "useWallpaperColors": false
     },

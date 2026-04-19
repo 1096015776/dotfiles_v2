@@ -1,23 +1,22 @@
-// ────────────── Input Configuration ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
 
 input {
     mod-key "Alt"
     keyboard {
         xkb {
-            //If you want to overwrite your keyboard layout,
-            // uncomment the line below and change the layout accordingly.
-            //layout "us" // Use the American keyboard layout
             options "caps:ctrl_modifier"
         }
-        numlock // Enable numlock on startup
+        numlock
     }
-
     touchpad {
-        tap // Enable tap-to-click
-        natural-scroll // Enable natural (macOS-style) scrolling
+        tap
+        natural-scroll
     }
+    workspace-auto-back-and-forth
+}
 
-    focus-follows-mouse // Automatically focus windows under the mouse pointer
-    workspace-auto-back-and-forth // Enable workspace back & forth switching
+gestures {
+   hot-corners {
+    off
+  }
 }
