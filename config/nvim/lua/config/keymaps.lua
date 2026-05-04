@@ -74,4 +74,6 @@ end)
 --   vim.fn.setreg("+", vim.fn.expand("<cword>"))
 -- end, { silent = true })
 --
-vim.keymap.set("x","gs","<Plug>nvim-surround-visual",{desc="add a surrounding pair around a visual selection"})
+vim.keymap.set("x", "S", "<Plug>(nvim-surround-visual)", {
+  desc = "Add a surrounding pair around a visual selection",
+})
