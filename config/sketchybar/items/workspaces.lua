@@ -1,6 +1,6 @@
 local colors = require 'colors'
 local settings = require 'settings'
-local app_icons = require 'app_icons'
+local app_icons = require 'helpers.icon_map'
 local constants = require 'constants'
 
 -- Add padding to the left
@@ -249,7 +249,7 @@ get_workspaces(function(workspaces_and_monitors)
         workspace:set {
           icon = { highlight = is_focused },
           label = { highlight = is_focused },
-          blur_radius = 30,
+          blur_radius = is_focused and 10 or 0,
           background = {
             color = is_focused and colors.workspaces.item_background_focused or colors.workspaces.item_background,
           },

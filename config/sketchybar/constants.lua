@@ -3,8 +3,8 @@ local M = {}
 M.items = {
   SPACES = 'workspaces',
   CALENDAR = 'calendar',
-  EVENTS = 'events',
-  VPN = 'vpn',
+  -- EVENTS = 'events',
+  -- VPN = 'vpn',
 }
 
 return M
