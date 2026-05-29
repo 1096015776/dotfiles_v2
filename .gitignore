@@ -5,3 +5,4 @@ config/zsh/local.zsh
 .aider*
 /config/zsh/.p10k.zsh.zwc
 /config/sketchybar/helpers
+/config/zsh/.zsh_history.new
