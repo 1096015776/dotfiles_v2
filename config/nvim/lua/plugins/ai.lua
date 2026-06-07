@@ -122,6 +122,9 @@ return {
     optional = true,
     dependencies = { "giuxtaposition/blink-cmp-copilot" },
     opts = {
+      -- fuzzy = {
+      --   implementation = "lua", -- 强制用 Lua，不报错
+      -- },
       sources = {
         default = { "copilot" },
         providers = {
