@@ -126,13 +126,16 @@ return {
               desc = "Select TS workspace version",
             },
           },
+          enabled = true,
         },
-        volar = {
+        vue_ls = {
           init_options = {
             vue = {
               hybridMode = true,
             },
           },
+          enabled = true,
+          mason = true,
         },
         lua_ls = {
           -- mason = false, -- set to false if you don't want this server to be installed with mason
