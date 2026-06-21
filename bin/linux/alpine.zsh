@@ -3,7 +3,7 @@
 
 # apk add --no-cache ncurses-terminfo-base ncurses-terminfo ncurses-libs
 
-apk add --no-cache neovim lazygit fd ripgrep jq alpine-sdk delta tmux yazi fd zsh bash zip npm figlet nginx fzf lua-language-server stylua tree-sitter-cli fastfetch curl 7zip file bat eza openssh-client
+apk add --no-cache neovim lazygit fd ripgrep jq alpine-sdk delta tmux yazi fd zsh bash zip npm figlet nginx fzf lua-language-server stylua tree-sitter-cli fastfetch curl 7zip file bat eza git-svn subversion procps openssh-client
 apk del --purge   alpine-sdk tree-sitter-cli
 
 # find . -type d -name ".git" -exec rm -rf {} +
