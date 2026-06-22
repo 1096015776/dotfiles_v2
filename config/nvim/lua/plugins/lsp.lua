@@ -190,9 +190,9 @@ return {
         "vtsls",
         "tailwindcss-language-server",
         "vue-language-server",
+        "vetur-vls",
         -- "biome",
         -- "typescript-language-server",
-        -- "vetur-vls",
 
         -- markdown
         "markdownlint",
