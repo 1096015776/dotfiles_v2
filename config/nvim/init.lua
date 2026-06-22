@@ -2,3 +2,4 @@
 require("config.lazy")
 require("fx.setting")
 require("fx.mappings")
+-- require("spec.vue2")
